@@ -1,7 +1,12 @@
 {% extends 'test/base.html' %}
+{% load static %}
 
 {% block content %}
 
-<p>Home View...</p>
+<p id="cnt">Counting: Not Started Yet</p>
 
 {% endblock content %}
+
+{% block scripts %}
+<script src="{% static 'test/js/websocket.js' %}"></script>
+{% endblock scripts %}

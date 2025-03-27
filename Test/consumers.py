@@ -10,7 +10,7 @@ class MySyncConsumer(SyncConsumer):
         })
 
     def websocket_receive(self, event):
-        print(f'Message From Client: {event['text']}')
+        print(f'Message Received From Client: {event['text']}')
 
         for i in range(10):
             self.send({
